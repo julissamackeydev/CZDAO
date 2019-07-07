@@ -2,6 +2,8 @@ from pymongo import MongoClient, DESCENDING
 from datetime import date
 import os
 
+os.environ['CONNECTION_STRING']='mongodb+srv://czdao:Mon_0908@cz-rtjkk.mongodb.net/test?retryWrites=true'
+
 client = MongoClient(os.environ['CONNECTION_STRING'])
 db = client.cz
 

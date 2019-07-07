@@ -67,6 +67,4 @@ def get_latest():
 	response = content.get_latest()
 	return make_response(jsonify({'success': True, 'content': response}), 200)	
 
-
-
 app.run()    
